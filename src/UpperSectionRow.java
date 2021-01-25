@@ -7,12 +7,12 @@ public class UpperSectionRow {
         targetNumber = target;
     }
 
-    public void CalculateScore(AllDice allDice)
+    public void CalculateScore(AllDice dice)
     {
         score = 0;
-        for (int i = 0; i < allDice.NUM_DICE; i++)
+        for (int i = 0; i < dice.NUM_DICE; i++)
         {
-            int value = allDice.GetDie(i).value;
+            int value = dice.GetDie(i).value;
             if (value == targetNumber)
             {
                 score += value;
