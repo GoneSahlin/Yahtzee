@@ -1,5 +1,5 @@
 public class AllDice {
-    static final int NUM_DICE = 5;
+    public static final int NUM_DICE = 5;
 
     static public Die[] dice;
 
