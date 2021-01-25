@@ -13,10 +13,10 @@ public class AllDice {
         }
     }
 
-    //returns die object, diceNumber index starts at 0 ends at NUM_DICE-1
-    public Die GetDie(int diceNumber)
+    //returns die object, dieNumber index starts at 0 ends at NUM_DICE-1
+    public Die GetDie(int dieNumber)
     {
-        return dice[diceNumber];
+        return dice[dieNumber];
     }
 
     //prints the values of all of the dice
@@ -36,5 +36,11 @@ public class AllDice {
         {
             dice[i].rollDie();
         }
+    }
+
+    //rolls single die
+    public void RollDie(int dieNumber)
+    {
+        dice[dieNumber].rollDie();
     }
 }

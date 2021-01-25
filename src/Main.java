@@ -4,5 +4,6 @@ public class Main {
         dice.PrintDiceValues();
         dice.RollAllDice();
         dice.PrintDiceValues();
+        dice.RollDie(1);
     }
 }
