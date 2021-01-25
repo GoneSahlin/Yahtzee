@@ -1,15 +1,12 @@
 public class Main {
     public static void main(String[] args) {
+
         AllDice dice = new AllDice();
         dice.RollAllDice();
         dice.PrintDiceValues();
-        UpperSectionRow aces = new UpperSectionRow(1);
-        UpperSectionRow twos = new UpperSectionRow(2);
 
-        aces.CalculateScore(dice);
-        System.out.println(aces.score);
+        UpperSection upSec = new UpperSection(dice.GetDie(0).DICE_SIDES);
+        upSec.CalculateAllPossibleScores(dice);
 
-        twos.CalculateScore(dice);
-        System.out.println(twos.score);
     }
 }
