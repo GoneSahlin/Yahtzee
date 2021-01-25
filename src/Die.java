@@ -2,7 +2,7 @@ public class Die {
 
     static final int DICE_SIDES = 6;
 
-    private int value;
+    public int value;
 
     //Constructor for Die class
     public Die()
@@ -10,15 +10,15 @@ public class Die {
         value = 1;
     }
 
-    //returns value
-    public int getValue()
-    {
-        return value;
-    }
-
     //generates random number from 1 to DICE_SIDES, and stores in value
     public void rollDie()
     {
         value = (int)(Math.random() * (DICE_SIDES) + 1);
+    }
+
+    //sets value to input
+    public void setValue(int newValue)
+    {
+        value = newValue;
     }
 }
